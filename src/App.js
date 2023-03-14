@@ -1,9 +1,11 @@
 import React from 'react'
+import NotesList from './components/NotesList';
 
 export const App = () => {
   return (
-    <div>
-      <h1>Notes</h1>
+    <div className='container'>
+      <NotesList />
+      
       </div>
   )
 }
