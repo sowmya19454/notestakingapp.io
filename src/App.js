@@ -24,10 +24,13 @@ export const App = () => {
     date: "18/04/2023",
   },
 ]);
+const addNote = (text) =>{
+  console.log(text);
+}
   return (
     <div className='container'>
       <h1>Notes</h1>
-      <NotesList notes={notes}/>
+      <NotesList notes={notes} handleAddNote={addNote}/>
       
       </div>
   )
