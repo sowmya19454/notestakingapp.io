@@ -6,7 +6,10 @@ const AddNote = ({handleAddNote})=>{
         setNoteText(event.target.value);
     }
     const handleSaveClick = () =>{
+        if(noteText.trim().length>0){
          handleAddNote(noteText);
+         setNoteText('')
+        }
     }
     return (
         <div className="note new">
